@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://caowz.github.io/public/sitemap.xml
+Sitemap: https://caowz.github.io/sitemap.xml
