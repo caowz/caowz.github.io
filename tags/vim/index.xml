@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on cwzebras blogs</title>
+    <link>https://caowz.github.io/public/tags/vim/</link>
+    <description>Recent content in Vim on cwzebras blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Feb 2019 14:30:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://caowz.github.io/public/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的Vim配置文件</title>
+      <link>https://caowz.github.io/public/post/vim-my-vimrc/</link>
+      <pubDate>Mon, 25 Feb 2019 14:30:18 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/public/post/vim-my-vimrc/</guid>
+      <description>本文主要是列出了我的Vim的配置文件，方便在新的电脑或者服务器上配置我的Vim。 Vim 自从我大四下学期接触到了vim之后，便深深的爱上了这个文本</description>
+    </item>
+    
+  </channel>
+</rss>
