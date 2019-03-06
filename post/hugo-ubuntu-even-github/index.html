@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2019-02-22T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2019-02-22T01:37:56&#43;08:00" />
-<meta itemprop="wordCount" content="355">
+<meta itemprop="wordCount" content="673">
 
 
 
@@ -133,8 +133,8 @@
             <a href="/categories/%E5%8D%9A%E5%AE%A2/"> 博客 </a>
             <a href="/categories/%E6%9D%82%E8%B0%88/"> 杂谈 </a>
             </div>
-          <span class="more-meta"> 约 355 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 673 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
     </header>
@@ -146,9 +146,11 @@
 <ul>
 <li><a href="#1-ubuntu环境">1. Ubuntu环境</a></li>
 <li><a href="#2-hugo静态网站生成器">2. Hugo静态网站生成器</a></li>
-<li><a href="#3-hugo博客主题">3. Hugo博客主题</a>
+<li><a href="#3-hugo主题设置及生成博客">3. Hugo主题设置及生成博客</a>
 <ul>
 <li><a href="#3-1-建立站点">3.1 建立站点</a></li>
+<li><a href="#3-2-选择主题及配置">3.2 选择主题及配置</a></li>
+<li><a href="#3-3-新建文章">3.3 新建文章</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -170,11 +172,55 @@
 <p>目前比较主流的静态博客网站生成器主要有Hexo和Hugo。本文主要是介绍如何使用Hugo的静态网站生成器，Hugo是由Go语言实现的静态网站生成器。具有简单、易用、高效、易扩展、快速部署等特点。
 在网站上可以下载<a href="https://github.com/gohugoio/hugo/releases">Hugo</a>的发行版，这里就不过多的进行介绍了。</p>
 
-<h1 id="3-hugo博客主题">3. Hugo博客主题</h1>
+<h1 id="3-hugo主题设置及生成博客">3. Hugo主题设置及生成博客</h1>
 
 <p>Hugo目前已经提供了非常多的<a href="https://themes.gohugo.io/">主题</a>，我在这里采用的是<a href="https://themes.gohugo.io/hugo-theme-even/">even主题</a>。关于该主题的介绍可以参考其文档。</p>
 
 <h2 id="3-1-建立站点">3.1 建立站点</h2>
+
+<p>建立站点的方法非常简单，在某一个文件夹下使用命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">hugo new site [site name]</pre></td></tr></table>
+</div>
+</div>
+<p>输入上述的命令后就可以建立如下列的目录结构</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+├── Makefile
+├── node_modules
+├── resources
+├── static
+└── themes</pre></td></tr></table>
+</div>
+</div>
+<p>其中<code>config.toml</code>,<code>Makefile</code>,<code>node_modules</code>,<code>resources</code>等可能不存在,主要是这些文件是我使用的主题的配置文件以及我创建的一些文件或文件夹。</p>
+
+<h2 id="3-2-选择主题及配置">3.2 选择主题及配置</h2>
+
+<p>选取一个自己喜欢的主题，并将该主题下的<code>config.toml</code>文件复制到根目录下，并且根据情况对该文件进行配置，我选取的是even主题，该主题可以支持目录显示，LaTeX数学符号，赞赏支持等，可以根据需要来编辑该文件来进行配置。</p>
+
+<h2 id="3-3-新建文章">3.3 新建文章</h2>
 
     </div>
 
