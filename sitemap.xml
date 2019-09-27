@@ -10,14 +10,7 @@
   </url>
   
   <url>
-    <loc>https://caowz.github.io/post/2019-09-27-test/</loc>
-    <lastmod>2019-09-27T14:07:25+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://caowz.github.io/post/latex-math-symbol/</loc>
+    <loc>https://caowz.github.io/post/2019-02-latex-math-symbol/</loc>
     <lastmod>2019-02-25T14:30:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,7 +38,7 @@
   
   <url>
     <loc>https://caowz.github.io/post/</loc>
-    <lastmod>2019-09-27T14:07:25+08:00</lastmod>
+    <lastmod>2019-02-25T14:30:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
