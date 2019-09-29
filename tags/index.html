@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="caowz" /><meta name="description" content="my blog (caowz) -- taking note my research and life." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="caowz" /><meta name="description" content="my blog (caowz) -- taking note of my research and life." />
 
 
 
@@ -35,24 +35,24 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Tags" />
-<meta property="og:description" content="my blog (caowz) -- taking note my research and life." />
+<meta property="og:description" content="my blog (caowz) -- taking note of my research and life." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://caowz.github.io/tags/" />
 
-<meta property="og:updated_time" content="2019-02-25T14:30:14&#43;08:00"/>
+<meta property="og:updated_time" content="2019-09-29T10:41:11&#43;08:00"/>
 
 <meta itemprop="name" content="Tags">
-<meta itemprop="description" content="my blog (caowz) -- taking note my research and life.">
+<meta itemprop="description" content="my blog (caowz) -- taking note of my research and life.">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="my blog (caowz) -- taking note my research and life."/>
+<meta name="twitter:description" content="my blog (caowz) -- taking note of my research and life."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -62,6 +62,7 @@
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
+
 
 </head>
 <body>
@@ -111,6 +112,18 @@
       </li>
   </ul>
 </nav>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
     </header>
 
     <main id="main" class="main">
@@ -118,11 +131,21 @@
         <div id="content" class="content">
           <div class="terms">
       <div class="terms-title">
-        共计 1 个标签
+        共计 3 个标签
       </div>
       <div class="terms-tags">
+          <a class="terms-link" href="/tags/data/">
+            Data
+            <span class="terms-count">1</span>
+          </a>
+        
           <a class="terms-link" href="/tags/latex/">
             LaTeX
+            <span class="terms-count">1</span>
+          </a>
+        
+          <a class="terms-link" href="/tags/linux/">
+            Linux
             <span class="terms-count">1</span>
           </a>
         </div>
@@ -136,11 +159,10 @@
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="caowz@mail.ustc.edu.cn" class="iconfont icon-email" title="email"></a>
-      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
-      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
-      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
-      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
-      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+      <a href="https://github.com/" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/signin?next=%2F" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.bilibili.com/" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://caowz.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -154,7 +176,11 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
 
   <span class="copyright-year">
     &copy; 

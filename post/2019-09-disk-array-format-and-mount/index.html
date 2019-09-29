@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>LaTeX数学符号 - caowz blog for taking notes about my research and life</title>
+  <title>Linux下磁盘阵列的格式化及挂载 - caowz blog for taking notes about my research and life</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="caowz" /><meta name="description" content="本文主要是介绍LaTeX中相关的数学符号 LaTeX数学符号 LaTeX可以写出非常完美的数学公式，同时在很多博客等网站上也支持LaTeX的数学" /><meta name="keywords" content="LaTeX" />
+<meta name="author" content="caowz" /><meta name="description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一" /><meta name="keywords" content="Linux" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.54.0 with theme even" />
 
 
-<link rel="canonical" href="https://caowz.github.io/post/2019-02-latex-math-symbol/" />
+<link rel="canonical" href="https://caowz.github.io/post/2019-09-disk-array-format-and-mount/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,27 +38,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="LaTeX数学符号" />
-<meta property="og:description" content="本文主要是介绍LaTeX中相关的数学符号 LaTeX数学符号 LaTeX可以写出非常完美的数学公式，同时在很多博客等网站上也支持LaTeX的数学" />
+<meta property="og:title" content="Linux下磁盘阵列的格式化及挂载" />
+<meta property="og:description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://caowz.github.io/post/2019-02-latex-math-symbol/" />
-<meta property="article:published_time" content="2019-02-25T14:30:14&#43;08:00"/>
-<meta property="article:modified_time" content="2019-02-25T14:30:14&#43;08:00"/>
+<meta property="og:url" content="https://caowz.github.io/post/2019-09-disk-array-format-and-mount/" />
+<meta property="article:published_time" content="2019-09-27T16:08:52&#43;08:00"/>
+<meta property="article:modified_time" content="2019-09-27T16:08:52&#43;08:00"/>
 
-<meta itemprop="name" content="LaTeX数学符号">
-<meta itemprop="description" content="本文主要是介绍LaTeX中相关的数学符号 LaTeX数学符号 LaTeX可以写出非常完美的数学公式，同时在很多博客等网站上也支持LaTeX的数学">
-
-
-<meta itemprop="datePublished" content="2019-02-25T14:30:14&#43;08:00" />
-<meta itemprop="dateModified" content="2019-02-25T14:30:14&#43;08:00" />
-<meta itemprop="wordCount" content="394">
+<meta itemprop="name" content="Linux下磁盘阵列的格式化及挂载">
+<meta itemprop="description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一">
 
 
+<meta itemprop="datePublished" content="2019-09-27T16:08:52&#43;08:00" />
+<meta itemprop="dateModified" content="2019-09-27T16:08:52&#43;08:00" />
+<meta itemprop="wordCount" content="541">
 
-<meta itemprop="keywords" content="LaTeX," />
+
+
+<meta itemprop="keywords" content="Linux," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="LaTeX数学符号"/>
-<meta name="twitter:description" content="本文主要是介绍LaTeX中相关的数学符号 LaTeX数学符号 LaTeX可以写出非常完美的数学公式，同时在很多博客等网站上也支持LaTeX的数学"/>
+<meta name="twitter:title" content="Linux下磁盘阵列的格式化及挂载"/>
+<meta name="twitter:description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -138,15 +138,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">LaTeX数学符号</h1>
+      <h1 class="post-title">Linux下磁盘阵列的格式化及挂载</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-02-25 </span>
+        <span class="post-time"> 2019-09-27 </span>
         <div class="post-category">
-            <a href="/categories/latex/"> LaTeX </a>
+            <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 约 394 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 541 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -156,25 +156,11 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#latex数学符号">LaTeX数学符号</a>
+<li>
 <ul>
-<li><a href="#数学模式重音符号">数学模式重音符号</a></li>
-<li><a href="#希腊字母">希腊字母</a></li>
-<li><a href="#二元关系">二元关系</a></li>
-<li><a href="#二元运算">二元运算</a></li>
-<li><a href="#大运算符">大运算符</a></li>
-<li><a href="#箭头">箭头</a></li>
-<li><a href="#定界符">定界符</a></li>
-<li><a href="#其他符号">其他符号</a></li>
-<li><a href="#非数学符号">非数学符号</a></li>
-<li><a href="#ams定界符">AMS定界符</a></li>
-<li><a href="#ams希腊和希伯来字母">AMS希腊和希伯来字母</a></li>
-<li><a href="#ams二元关系">AMS二元关系</a></li>
-<li><a href="#ams箭头">AMS箭头</a></li>
-<li><a href="#ams二元否定关系符和箭头">AMS二元否定关系符和箭头</a></li>
-<li><a href="#ams二元否定关系符和箭头-1">AMS二元否定关系符和箭头</a></li>
-<li><a href="#ams二元否定关系符和箭头-2">AMS二元否定关系符和箭头</a></li>
-<li><a href="#数学字母">数学字母</a></li>
+<li><a href="#1-linux相关的命令">1. Linux相关的命令</a></li>
+<li><a href="#2-具体的操作">2. 具体的操作</a></li>
+<li><a href="#3-可能会遇到的问题">3. 可能会遇到的问题</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -182,129 +168,54 @@
 </div>
     <div class="post-content">
       <blockquote>
-<p>本文主要是介绍LaTeX中相关的数学符号</p>
+<p>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的
+一些命令.</p>
 </blockquote>
 
-<h1 id="latex数学符号">LaTeX数学符号</h1>
+<h2 id="1-linux相关的命令">1. Linux相关的命令</h2>
 
-<p>LaTeX可以写出非常完美的数学公式，同时在很多博客等网站上也支持LaTeX的数学符号的语法。因此，现在LaTeX的使用越来越广泛，下面简单介绍一下如何使用LaTeX命令来编写出各种各样的数学符号。如果需要下载LaTeX的数学符号的PDF文件,可以点击<a href="/file-pdfs/latex-math-symbol.pdf">这个链接</a>。</p>
+<ul>
+<li><p>fdisk
+lsblk 是Linux下列出块设备的一个命令,默认的显示比较简洁,如果只想简单的查看哪些块
+设备,非常推荐.</p></li>
 
-<p>使用LaTeX写数学符号时，通常需要使用下列的相关宏包</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{latexsym}</pre></td></tr></table>
-</div>
-</div>
-<p>其中大部分的数学符号只需要使用\usepackage{amsmath}即可，有些比较不常见的符号可能需要使用amssymb和latexsym宏包。具体的数学符号及其对应的命令如下：</p>
+<li><p>lsblk
+fdisk 是Linux系统下一个常用的对磁盘创建,分区以及删除的工具</p></li>
 
-<h2 id="数学模式重音符号">数学模式重音符号</h2>
+<li><p>parted
+parted 也是Linux下的一个对磁盘创建,分区以及删除的工具</p></li>
 
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-1-数学模式重音符号.png" alt="" />
-</div></p>
+<li><p>mkfs
+mkfs 是在特定的分区创建Linux的文件系统,对于磁盘阵列通常使用xfs作为其文件系统.</p></li>
 
-<h2 id="希腊字母">希腊字母</h2>
+<li><p>mount
+mount 是对磁盘进行挂载的命令,可以用来挂载磁盘到某一特定的路径.</p></li>
 
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-2-希腊字母.png" alt="" />
-</div></p>
+<li><p>umount
+umount 是对磁盘阵列卸载的命令,可以用来把挂载在特定路径的磁盘卸载.</p></li>
+</ul>
 
-<h2 id="二元关系">二元关系</h2>
+<h2 id="2-具体的操作">2. 具体的操作</h2>
 
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-3-二元关系.png" alt="" />
-</div></p>
+<ul>
+<li><p>2.1 lsblk查看磁盘对应的名称,例如sdd等.</p></li>
 
-<h2 id="二元运算">二元运算</h2>
+<li><p>2.2 fdisk 或者 parted 来对磁盘进去分区.</p></li>
 
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-4-二元运算.png" alt="" />
-</div></p>
+<li><p>2.3 mkfs 设置磁盘的文件系统</p></li>
 
-<h2 id="大运算符">大运算符</h2>
+<li><p>2.4 mount 挂载到指定的路径</p></li>
 
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-5-大运算符.png" alt="" />
-</div></p>
+<li><p>2.5 /etc/fstab 中添加对应的命令,使其重启后可以自动挂载</p></li>
+</ul>
 
-<h2 id="箭头">箭头</h2>
+<h2 id="3-可能会遇到的问题">3. 可能会遇到的问题</h2>
 
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-6-箭头.png" alt="" />
-</div></p>
-
-<h2 id="定界符">定界符</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-7-定界符.png" alt="" />
-</div></p>
-
-<h2 id="其他符号">其他符号</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-9-其他符号.png" alt="" />
-</div></p>
-
-<h2 id="非数学符号">非数学符号</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-10-非数学符号.png" alt="" />
-</div></p>
-
-<h2 id="ams定界符">AMS定界符</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-11-AMS定界符.png" alt="" />
-</div></p>
-
-<h2 id="ams希腊和希伯来字母">AMS希腊和希伯来字母</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-12-AMS希腊和希伯来字母.png" alt="" />
-</div></p>
-
-<h2 id="ams二元关系">AMS二元关系</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-13-AMS二元关系.png" alt="" />
-</div></p>
-
-<h2 id="ams箭头">AMS箭头</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-14-AMS箭头.png" alt="" />
-</div></p>
-
-<h2 id="ams二元否定关系符和箭头">AMS二元否定关系符和箭头</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-15-AMS二元否定关系符和箭头.png" alt="" />
-</div></p>
-
-<h2 id="ams二元否定关系符和箭头-1">AMS二元否定关系符和箭头</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-16-AMS二元运算符.png" alt="" />
-</div></p>
-
-<h2 id="ams二元否定关系符和箭头-2">AMS二元否定关系符和箭头</h2>
-
-<p><div align=center>
-    <img src="/images/latex-math-symbol/table-17-AMS其他符号.png" alt="" />
-</div></p>
-
-<h2 id="数学字母">数学字母</h2>
-
-<p><div align=center><img src="/images/latex-math-symbol/table-18-数学字母.png" alt="" />
-</div>
-.</p>
+<p>在实际处理的过程中我使用fdisk对新的磁盘阵列进行分区,但是最大只能
+给出2T的空间,后来以为是fdisk对磁盘空间大小的限制,改用parted来分区后同样
+有这个问题,后来发现是磁盘默认的分区表是MBR,需要先改成GPT后再进行分区即可
+(网上看到说MBR最大的容量是2.1T,而GPT支持的硬盘大小为1024T,这些数据来源于网上,
+我不能保证完全准确).</p>
     </div>
 
     <div class="post-copyright">
@@ -315,7 +226,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2019-02-25
+        2019-09-27
         
     </span>
   </p>
@@ -324,15 +235,19 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/latex/">LaTeX</a>
+          <a href="/tags/linux/">Linux</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/2019-09-disk-array-format-and-mount/">
+        <a class="prev" href="/post/2019-09-fetch-seismogram-by-scripts/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Linux下磁盘阵列的格式化及挂载</span>
+            <span class="prev-text nav-default">使用Web Service Fetch脚本申请和获取地震数据及相关信息</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        
+        <a class="next" href="/post/2019-02-latex-math-symbol/">
+            <span class="next-text nav-default">LaTeX数学符号</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
   </article>

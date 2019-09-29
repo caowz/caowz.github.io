@@ -10,6 +10,20 @@
   </url>
   
   <url>
+    <loc>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</loc>
+    <lastmod>2019-09-29T10:41:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</loc>
+    <lastmod>2019-09-27T16:08:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://caowz.github.io/post/2019-02-latex-math-symbol/</loc>
     <lastmod>2019-02-25T14:30:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,6 +32,13 @@
   
   <url>
     <loc>https://caowz.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/tags/data/</loc>
+    <lastmod>2019-09-29T10:41:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -37,15 +58,36 @@
   </url>
   
   <url>
+    <loc>https://caowz.github.io/tags/linux/</loc>
+    <lastmod>2019-09-27T16:08:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/categories/linux/</loc>
+    <lastmod>2019-09-27T16:08:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://caowz.github.io/post/</loc>
-    <lastmod>2019-02-25T14:30:14+08:00</lastmod>
+    <lastmod>2019-09-29T10:41:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/categories/software/</loc>
+    <lastmod>2019-09-29T10:41:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://caowz.github.io/tags/</loc>
-    <lastmod>2019-02-25T14:30:14+08:00</lastmod>
+    <lastmod>2019-09-29T10:41:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

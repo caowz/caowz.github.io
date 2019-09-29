@@ -6,10 +6,28 @@
     <description>Recent content in Posts on caowz blog for taking notes about my research and life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Feb 2019 14:30:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2019 10:41:11 +0800</lastBuildDate>
     
 	<atom:link href="https://caowz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用Web Service Fetch脚本申请和获取地震数据及相关信息</title>
+      <link>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</link>
+      <pubDate>Sun, 29 Sep 2019 10:41:11 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</guid>
+      <description>最近想下载一些地震数据,但是发现IRIS网站中的 Wilber3网页一直无法打开,因此尝试 使用脚本获取数据的方法,把对应的用法在这里记录. Web Service</description>
+    </item>
+    
+    <item>
+      <title>Linux下磁盘阵列的格式化及挂载</title>
+      <link>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</link>
+      <pubDate>Fri, 27 Sep 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</guid>
+      <description>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一</description>
+    </item>
     
     <item>
       <title>LaTeX数学符号</title>

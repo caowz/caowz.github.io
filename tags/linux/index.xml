@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on caowz blog for taking notes about my research and life</title>
+    <link>https://caowz.github.io/tags/linux/</link>
+    <description>Recent content in Linux on caowz blog for taking notes about my research and life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Sep 2019 16:08:52 +0800</lastBuildDate>
+    
+	<atom:link href="https://caowz.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux下磁盘阵列的格式化及挂载</title>
+      <link>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</link>
+      <pubDate>Fri, 27 Sep 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</guid>
+      <description>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一</description>
+    </item>
+    
+  </channel>
+</rss>

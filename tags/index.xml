@@ -6,10 +6,19 @@
     <description>Recent content in Tags on caowz blog for taking notes about my research and life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Feb 2019 14:30:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2019 10:41:11 +0800</lastBuildDate>
     
 	<atom:link href="https://caowz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data</title>
+      <link>https://caowz.github.io/tags/data/</link>
+      <pubDate>Sun, 29 Sep 2019 10:41:11 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/tags/data/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>LaTeX</title>
@@ -17,6 +26,15 @@
       <pubDate>Mon, 25 Feb 2019 14:30:14 +0800</pubDate>
       
       <guid>https://caowz.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://caowz.github.io/tags/linux/</link>
+      <pubDate>Fri, 27 Sep 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
