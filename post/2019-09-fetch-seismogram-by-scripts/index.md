@@ -5,9 +5,11 @@
 [Wilber3](https://ds.iris.edu/wilber3/find_event)网页一直无法打开,因此尝试
 使用脚本获取数据的方法,把对应的用法在这里记录.
 
-## Web Service Fetch scripts
+## 1. Web Service Fetch scripts
 [Web Service Fetch scripts](https://seiscode.iris.washington.edu/projects/ws-fetch-scripts)
-提供了4个脚本来获取地震数据以及地震相关的一些信息.
+提供了4个脚本来获取地震数据以及地震相关的一些信息. 其中 **FetchData**,**FetchMetadata**
+和 **FetchEvent** 是比较早编写的脚本，因此使用的是 **perl** 语言，而 **FetchSyn** 是后来增加
+的脚本，使用的是 **Python** 语言。
 
 **1. FetchData (Perl)**
 
@@ -28,7 +30,7 @@
 上述提到的4个脚本可以在[Web Service Fetch scripts](https://seiscode.iris.washington.edu/projects/ws-fetch-scripts)
 的网站上进行下载.
 
-## FetchData
+## 2. FetchData
 **FetchData** 是使用 **perl** 来编写的脚本,其具体的用法如下:
 ``` 
 FetchData-2018.337: collect time series and related metadata (version 2018.337)
@@ -82,7 +84,7 @@ Usage: FetchData-2018.337 [options]
 {{% /admonition %}}
 
 
-## FetchMetadata
+## 3. FetchMetadata
 **FetchMetadata** 是使用 **perl** 来编写的脚本,其具体的用法如下:
 ```
 FetchMetadata-2014.316: collect channel metadata (2014.316)
@@ -125,7 +127,7 @@ Usage: FetchMetadata-2014.316 [options]
 AU|MCQ||AX0|-54.4986|158.9561|14|0|0|0||3.2875E0|0|A|1|2008-04-28T00:00:00|2599-12-31T23:59:59
 ```
 
-## FetchEvent
+## 4. FetchEvent
 **FetchEvent** 是使用 **perl** 来编写的脚本,其具体的用法如下:
 ```
 FetchEvent-2014.340: collect event information (2014.340)
@@ -174,7 +176,7 @@ Usage: FetchEvent-2014.340 [options]
 这样可以根据地震的发震时刻来选择获取哪一段时间内的波形数据.
 {{% /admonition %}}
 
-## FetchSyn
+## 5. FetchSyn
 **FetchSyn** 是使用 **Python** 来编写的脚本,其具体的用法如下:
 ```
 usage: FetchSyn-2016.007 [-h] [-A AGENT] [-recfile RECEIVERFILE] [-u]
@@ -257,4 +259,5 @@ optional arguments:
 **FetchSyn** 示例:
 ```
 ```
+
 

@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="caowz" /><meta name="description" content="Fetch seismogram and earthquake info by scripts" /><meta name="keywords" content="Data" />
+<meta name="author" content="caowz" /><meta name="description" content="Fetch seismogram and earthquake info by scripts" /><meta name="keywords" content="Tools, Data" />
 
 
 
@@ -51,11 +51,11 @@
 
 <meta itemprop="datePublished" content="2019-09-29T10:41:11&#43;08:00" />
 <meta itemprop="dateModified" content="2019-09-29T10:41:11&#43;08:00" />
-<meta itemprop="wordCount" content="1756">
+<meta itemprop="wordCount" content="1805">
 
 
 
-<meta itemprop="keywords" content="Data," />
+<meta itemprop="keywords" content="Tools,Data," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用Web Service Fetch脚本申请和获取地震数据及相关信息"/>
 <meta name="twitter:description" content="Fetch seismogram and earthquake info by scripts"/>
@@ -130,9 +130,9 @@
       <div class="post-meta">
         <span class="post-time"> 2019-09-29 </span>
         <div class="post-category">
-            <a href="/categories/software/"> Software </a>
+            <a href="/categories/tools/"> Tools </a>
             </div>
-          <span class="more-meta"> 约 1756 字 </span>
+          <span class="more-meta"> 约 1805 字 </span>
           <span class="more-meta"> 预计阅读 4 分钟 </span>
         
       </div>
@@ -145,11 +145,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#web-service-fetch-scripts">Web Service Fetch scripts</a></li>
-<li><a href="#fetchdata">FetchData</a></li>
-<li><a href="#fetchmetadata">FetchMetadata</a></li>
-<li><a href="#fetchevent">FetchEvent</a></li>
-<li><a href="#fetchsyn">FetchSyn</a></li>
+<li><a href="#1-web-service-fetch-scripts">1. Web Service Fetch scripts</a></li>
+<li><a href="#2-fetchdata">2. FetchData</a></li>
+<li><a href="#3-fetchmetadata">3. FetchMetadata</a></li>
+<li><a href="#4-fetchevent">4. FetchEvent</a></li>
+<li><a href="#5-fetchsyn">5. FetchSyn</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -162,10 +162,12 @@
 使用脚本获取数据的方法,把对应的用法在这里记录.</p>
 </blockquote>
 
-<h2 id="web-service-fetch-scripts">Web Service Fetch scripts</h2>
+<h2 id="1-web-service-fetch-scripts">1. Web Service Fetch scripts</h2>
 
 <p><a href="https://seiscode.iris.washington.edu/projects/ws-fetch-scripts">Web Service Fetch scripts</a>
-提供了4个脚本来获取地震数据以及地震相关的一些信息.</p>
+提供了4个脚本来获取地震数据以及地震相关的一些信息. 其中 <strong>FetchData</strong>,<strong>FetchMetadata</strong>
+和 <strong>FetchEvent</strong> 是比较早编写的脚本，因此使用的是 <strong>perl</strong> 语言，而 <strong>FetchSyn</strong> 是后来增加
+的脚本，使用的是 <strong>Python</strong> 语言。</p>
 
 <p><strong>1. FetchData (Perl)</strong></p>
 
@@ -194,7 +196,7 @@
 <p>上述提到的4个脚本可以在<a href="https://seiscode.iris.washington.edu/projects/ws-fetch-scripts">Web Service Fetch scripts</a>
 的网站上进行下载.</p>
 
-<h2 id="fetchdata">FetchData</h2>
+<h2 id="2-fetchdata">2. FetchData</h2>
 
 <p><strong>FetchData</strong> 是使用 <strong>perl</strong> 来编写的脚本,其具体的用法如下:</p>
 <div class="highlight"><div class="chroma">
@@ -296,7 +298,7 @@ Usage: FetchData-2018.337 [options]
 
 </div>
 
-<h2 id="fetchmetadata">FetchMetadata</h2>
+<h2 id="3-fetchmetadata">3. FetchMetadata</h2>
 
 <p><strong>FetchMetadata</strong> 是使用 <strong>perl</strong> 来编写的脚本,其具体的用法如下:</p>
 <div class="highlight"><div class="chroma">
@@ -380,7 +382,7 @@ Usage: FetchMetadata-2014.316 [options]
 AU|MCQ||AX0|-54.4986|158.9561|14|0|0|0||3.2875E0|0|A|1|2008-04-28T00:00:00|2599-12-31T23:59:59</pre></td></tr></table>
 </div>
 </div>
-<h2 id="fetchevent">FetchEvent</h2>
+<h2 id="4-fetchevent">4. FetchEvent</h2>
 
 <p><strong>FetchEvent</strong> 是使用 <strong>perl</strong> 来编写的脚本,其具体的用法如下:</p>
 <div class="highlight"><div class="chroma">
@@ -477,7 +479,7 @@ Usage: FetchEvent-2014.340 [options]
 
 </div>
 
-<h2 id="fetchsyn">FetchSyn</h2>
+<h2 id="5-fetchsyn">5. FetchSyn</h2>
 
 <p><strong>FetchSyn</strong> 是使用 <strong>Python</strong> 来编写的脚本,其具体的用法如下:</p>
 <div class="highlight"><div class="chroma">
@@ -666,10 +668,15 @@ optional arguments:
 </div>
 <footer class="post-footer">
       <div class="post-tags">
+          <a href="/tags/tools/">Tools</a>
           <a href="/tags/data/">Data</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/2019-09-screen-usage-and-settings/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Screen的用法及设置</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         <a class="next" href="/post/2019-09-disk-array-format-and-mount/">
             <span class="next-text nav-default">Linux下磁盘阵列的格式化及挂载</span>
             <span class="next-text nav-mobile">下一篇</span>
