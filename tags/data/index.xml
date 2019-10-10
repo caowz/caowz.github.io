@@ -17,7 +17,7 @@
       <pubDate>Sun, 29 Sep 2019 10:41:11 +0800</pubDate>
       
       <guid>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</guid>
-      <description>最近想下载一些地震数据,但是发现IRIS网站中的 Wilber3网页一直无法打开,因此尝试 使用脚本获取数据的方法,把对应的用法在这里记录. Web Service</description>
+      <description>最近想下载一些地震数据,但是发现IRIS网站中的 Wilber3网页一直无法打开,因此尝试 使用脚本获取数据的方法,把对应的用法在这里记录. 1. Web</description>
     </item>
     
   </channel>

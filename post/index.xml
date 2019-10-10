@@ -6,10 +6,19 @@
     <description>Recent content in Posts on caowz blog for taking notes about my research and life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Sep 2019 10:41:11 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 23:20:12 +0800</lastBuildDate>
     
 	<atom:link href="https://caowz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Screen的用法及设置</title>
+      <link>https://caowz.github.io/post/2019-09-screen-usage-and-settings/</link>
+      <pubDate>Mon, 30 Sep 2019 23:20:12 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-screen-usage-and-settings/</guid>
+      <description>Screen 是一款Linux下的全屏幕窗口管理软件。我在使用服务器（SSH 远 程连接）的过程中发现这类的软件可以提供很大的帮助，因此这里介绍一下如何使用</description>
+    </item>
     
     <item>
       <title>使用Web Service Fetch脚本申请和获取地震数据及相关信息</title>
@@ -17,7 +26,7 @@
       <pubDate>Sun, 29 Sep 2019 10:41:11 +0800</pubDate>
       
       <guid>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</guid>
-      <description>最近想下载一些地震数据,但是发现IRIS网站中的 Wilber3网页一直无法打开,因此尝试 使用脚本获取数据的方法,把对应的用法在这里记录. Web Service</description>
+      <description>最近想下载一些地震数据,但是发现IRIS网站中的 Wilber3网页一直无法打开,因此尝试 使用脚本获取数据的方法,把对应的用法在这里记录. 1. Web</description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@
       <pubDate>Fri, 27 Sep 2019 16:08:52 +0800</pubDate>
       
       <guid>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</guid>
-      <description>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux相关的命令 fdisk lsblk 是Linux下列出块设备的一</description>
+      <description>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令,默认的显示</description>
     </item>
     
     <item>
@@ -35,7 +44,7 @@
       <pubDate>Mon, 25 Feb 2019 14:30:14 +0800</pubDate>
       
       <guid>https://caowz.github.io/post/2019-02-latex-math-symbol/</guid>
-      <description>本文主要是介绍LaTeX中相关的数学符号 LaTeX数学符号 LaTeX可以写出非常完美的数学公式，同时在很多博客等网站上也支持LaTeX的数学</description>
+      <description>本文主要是介绍 LaTeX 中相关的数学符号 1. LaTeX 数学符号 LaTeX 可以写出非常完美的数学公式，同时在很多博客等网站上也支持 LaTeX 的数学符号 的语法。因此，现在 LaTeX 的使用</description>
     </item>
     
   </channel>
