@@ -19,71 +19,71 @@
 
 ## 1.1 数学模式重音符号
 <div align=center>
-    ![](/images/latex-math-symbol/table-1-数学模式重音符号.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-1-数学模式重音符号.png)
 </div> 
 ## 1.2 希腊字母
 <div align=center>
-    ![](/images/latex-math-symbol/table-2-希腊字母.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-2-希腊字母.png)
 </div> 
 ## 1.3 二元关系
 <div align=center>
-    ![](/images/latex-math-symbol/table-3-二元关系.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-3-二元关系.png)
 </div> 
 ## 1.4 二元运算
 <div align=center>
-    ![](/images/latex-math-symbol/table-4-二元运算.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-4-二元运算.png)
 </div> 
 ## 1.5 大运算符
 <div align=center>
-    ![](/images/latex-math-symbol/table-5-大运算符.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-5-大运算符.png)
 </div> 
 ## 1.6 箭头
 <div align=center>
-    ![](/images/latex-math-symbol/table-6-箭头.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-6-箭头.png)
 </div> 
 ## 1.7 定界符
 <div align=center>
-    ![](/images/latex-math-symbol/table-7-定界符.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-7-定界符.png)
 </div> 
 ## 1.9 其他符号
 <div align=center>
-    ![](/images/latex-math-symbol/table-9-其他符号.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-9-其他符号.png)
 </div> 
 ## 1.10 非数学符号
 <div align=center>
-    ![](/images/latex-math-symbol/table-10-非数学符号.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-10-非数学符号.png)
 </div> 
 ## 1.11 AMS定界符
 <div align=center>
-    ![](/images/latex-math-symbol/table-11-AMS定界符.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-11-AMS定界符.png)
 </div> 
 ## 1.12 AMS希腊和希伯来字母
 <div align=center>
-    ![](/images/latex-math-symbol/table-12-AMS希腊和希伯来字母.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-12-AMS希腊和希伯来字母.png)
 </div> 
 ## 1.13 AMS二元关系
 <div align=center>
-    ![](/images/latex-math-symbol/table-13-AMS二元关系.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-13-AMS二元关系.png)
 </div> 
 ## 1.14 AMS箭头
 <div align=center>
-    ![](/images/latex-math-symbol/table-14-AMS箭头.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-14-AMS箭头.png)
 </div> 
 ## 1.15 AMS二元否定关系符和箭头
 <div align=center>
-    ![](/images/latex-math-symbol/table-15-AMS二元否定关系符和箭头.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-15-AMS二元否定关系符和箭头.png)
 </div> 
 ## 1.16 AMS二元否定关系符和箭头
 <div align=center>
-    ![](/images/latex-math-symbol/table-16-AMS二元运算符.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-16-AMS二元运算符.png)
 </div> 
 ## 1.17 AMS二元否定关系符和箭头
 <div align=center>
-    ![](/images/latex-math-symbol/table-17-AMS其他符号.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-17-AMS其他符号.png)
 </div> 
 ## 1.18 数学字母
 <div align=center>
-    ![](/images/latex-math-symbol/table-18-数学字母.png)
+    ![](/images/2019-02-LaTeX-math-symbol/table-18-数学字母.png)
 </div> 
 .
 

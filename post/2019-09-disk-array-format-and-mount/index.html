@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="caowz" /><meta name="description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令,默认的显示" /><meta name="keywords" content="Linux" />
+<meta name="author" content="caowz" /><meta name="description" content="最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的 一些命令。 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令，默认的显示" /><meta name="keywords" content="Linux" />
 
 
 
@@ -39,26 +39,26 @@
 
 
 <meta property="og:title" content="Linux下磁盘阵列的格式化及挂载" />
-<meta property="og:description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令,默认的显示" />
+<meta property="og:description" content="最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的 一些命令。 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令，默认的显示" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caowz.github.io/post/2019-09-disk-array-format-and-mount/" />
 <meta property="article:published_time" content="2019-09-27T16:08:52&#43;08:00"/>
 <meta property="article:modified_time" content="2019-09-27T16:08:52&#43;08:00"/>
 
 <meta itemprop="name" content="Linux下磁盘阵列的格式化及挂载">
-<meta itemprop="description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令,默认的显示">
+<meta itemprop="description" content="最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的 一些命令。 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令，默认的显示">
 
 
 <meta itemprop="datePublished" content="2019-09-27T16:08:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-09-27T16:08:52&#43;08:00" />
-<meta itemprop="wordCount" content="487">
+<meta itemprop="wordCount" content="492">
 
 
 
 <meta itemprop="keywords" content="Linux," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux下磁盘阵列的格式化及挂载"/>
-<meta name="twitter:description" content="最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令,默认的显示"/>
+<meta name="twitter:description" content="最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的 一些命令。 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令，默认的显示"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 约 487 字 </span>
+          <span class="more-meta"> 约 492 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         
       </div>
@@ -155,8 +155,8 @@
 </div>
     <div class="post-content">
       <blockquote>
-<p>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的
-一些命令.</p>
+<p>最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的
+一些命令。</p>
 </blockquote>
 
 <h2 id="1-linux-相关的命令">1. <strong>Linux</strong> 相关的命令</h2>
@@ -164,61 +164,61 @@
 <p><strong>1.1 lsblk</strong>:</p>
 
 <ul>
-<li><strong>Linux</strong> 下列出块设备的一个命令,默认的显示比较简洁,如果只想简单的查看哪些块
-设备,非常推荐.</li>
+<li><strong>Linux</strong> 下列出块设备的一个命令，默认的显示比较简洁，如果只想简单的查看哪些块
+设备，非常推荐。</li>
 </ul>
 
 <p><strong>1.2 fdisk</strong>:</p>
 
 <ul>
-<li><strong>Linux</strong> 下一个常用的对磁盘创建,分区以及删除的工具</li>
+<li><strong>Linux</strong> 下一个常用的对磁盘创建，分区以及删除的工具。</li>
 </ul>
 
 <p><strong>1.3 parted</strong>:</p>
 
 <ul>
-<li><strong>Linux</strong> 下的一个对磁盘创建,分区以及删除的工具</li>
+<li><strong>Linux</strong> 下的一个对磁盘创建，分区以及删除的工具。</li>
 </ul>
 
 <p><strong>1.4 mkfs</strong>:</p>
 
 <ul>
-<li><strong>Linux</strong> 下创建磁盘文件系统的命令,对于磁盘阵列通常使用xfs作为其文件系统.</li>
+<li><strong>Linux</strong> 下创建磁盘文件系统的命令，对于磁盘阵列通常使用xfs作为其文件系统。</li>
 </ul>
 
 <p><strong>1.5 mount</strong>:</p>
 
 <ul>
-<li><strong>Linux</strong> 下对磁盘进行挂载的命令,可以用来挂载磁盘到某一特定的路径.</li>
+<li><strong>Linux</strong> 下对磁盘进行挂载的命令，可以用来挂载磁盘到某一特定的路径。</li>
 </ul>
 
 <p><strong>1.6 umount</strong>:</p>
 
 <ul>
-<li><strong>Linux</strong> 下对磁盘阵列卸载的命令,可以用来把挂载在特定路径的磁盘卸载.</li>
+<li><strong>Linux</strong> 下对磁盘阵列卸载的命令，可以用来把挂载在特定路径的磁盘卸载。</li>
 </ul>
 
 <h2 id="2-具体的操作">2. 具体的操作</h2>
 
 <ul>
-<li><p>2.1 <strong>lsblk</strong> 查看磁盘对应的名称,例如sdd等.</p></li>
+<li><p>2.1 <strong>lsblk</strong> 查看磁盘对应的名称，例如sdd等。</p></li>
 
-<li><p>2.2 <strong>fdisk</strong> 或者 <strong>parted</strong> 来对磁盘进去分区.</p></li>
+<li><p>2.2 <strong>fdisk</strong> 或者 <strong>parted</strong> 来对磁盘进去分区。</p></li>
 
-<li><p>2.3 <strong>mkfs</strong> 设置磁盘的文件系统</p></li>
+<li><p>2.3 <strong>mkfs</strong> 设置磁盘的文件系统。</p></li>
 
-<li><p>2.4 <strong>mount</strong> 挂载到指定的路径</p></li>
+<li><p>2.4 <strong>mount</strong> 挂载到指定的路径。</p></li>
 
-<li><p>2.5 <strong>/etc/fstab</strong> 中添加对应的命令,使其重启后可以自动挂载</p></li>
+<li><p>2.5 <strong>/etc/fstab</strong> 中添加对应的命令，使其重启后可以自动挂载。</p></li>
 </ul>
 
 <h2 id="3-可能会遇到的问题">3. 可能会遇到的问题</h2>
 
-<p>在实际处理的过程中我使用 <strong>fdisk</strong> 对新的磁盘阵列进行分区,但是最大只能
-给出 <strong>2T</strong> 的空间,后来以为是 <strong>fdisk</strong> 对磁盘空间大小的限制,改用 <strong>parted</strong> 来分区后同样
-有这个问题,后来发现是磁盘默认的分区表是 <strong>MBR</strong>,需要先改成 <strong>GPT</strong> 后再进行分区即可
-(网上看到说 <strong>MBR</strong> 最大的容量是 <strong>2.1T</strong>,而 <strong>GPT</strong> 支持的硬盘大小为 <strong>1024T</strong> ,这些数据来源于网上,
-我不能保证完全准确).</p>
+<p>在实际处理的过程中我使用 <strong>fdisk</strong> 对新的磁盘阵列进行分区，但是最大只能
+给出 <strong>2T</strong> 的空间，开始以为是 <strong>fdisk</strong> 对磁盘空间大小的限制，改用 <strong>parted</strong> 来分区后同样
+有这个问题，后来发现是磁盘默认的分区表是 <strong>MBR</strong>，需要先改成 <strong>GPT</strong> 后再进行分区即可
+(网上看到说 <strong>MBR</strong> 最大的容量是 <strong>2.1T</strong>，而 <strong>GPT</strong> 支持的硬盘大小为 <strong>1024T</strong> ，这些数据来源于网上，
+我不能保证完全准确)。</p>
     </div>
 
     <div class="post-copyright">

@@ -6,10 +6,37 @@
     <description>Recent content in Posts on caowz blog for taking notes about my research and life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Sep 2019 23:20:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 09:54:29 +0800</lastBuildDate>
     
 	<atom:link href="https://caowz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一维弹性波间断加辽金（DG）方法介绍</title>
+      <link>https://caowz.github.io/post/2019-10-1d-elastic-dg-theory-and-solution/</link>
+      <pubDate>Wed, 16 Oct 2019 09:54:29 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-1d-elastic-dg-theory-and-solution/</guid>
+      <description>在进行地震波传播过程的数值模拟时，主要使用有限差分或者有限元类的方法来求解弹性 波动方程，最近几年，间断加辽金的方法也越来越广泛的应用在地震波</description>
+    </item>
+    
+    <item>
+      <title>地球物理开源软件：地震学</title>
+      <link>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</link>
+      <pubDate>Tue, 15 Oct 2019 09:34:43 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</guid>
+      <description>本文主要是介绍开源的地球物理相关的软件（地震学）及获取的方式 0. 网址汇总 这部分主要是将一些网址进行汇总，里面包含了很多相关的代码，如果在下面的</description>
+    </item>
+    
+    <item>
+      <title>Asymptote绘图基础</title>
+      <link>https://caowz.github.io/post/2019-10-asymptote-plot-basic/</link>
+      <pubDate>Mon, 14 Oct 2019 09:18:23 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-asymptote-plot-basic/</guid>
+      <description>Asymptote是一个矢量图的绘图语言，主要是通过编程的方式来实现绘图，对于某些特定 情况下的绘图来说是非常好的一个选择。 Asymptote</description>
+    </item>
     
     <item>
       <title>Screen的用法及设置</title>
@@ -35,7 +62,7 @@
       <pubDate>Fri, 27 Sep 2019 16:08:52 +0800</pubDate>
       
       <guid>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</guid>
-      <description>最近组内的服务器新增加了一个磁盘阵列,简单记录一下在安装的过程中可能会用到的 一些命令. 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令,默认的显示</description>
+      <description>最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的 一些命令。 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令，默认的显示</description>
     </item>
     
     <item>
@@ -45,6 +72,15 @@
       
       <guid>https://caowz.github.io/post/2019-02-latex-math-symbol/</guid>
       <description>本文主要是介绍 LaTeX 中相关的数学符号 1. LaTeX 数学符号 LaTeX 可以写出非常完美的数学公式，同时在很多博客等网站上也支持 LaTeX 的数学符号 的语法。因此，现在 LaTeX 的使用</description>
+    </item>
+    
+    <item>
+      <title>TODO 列表</title>
+      <link>https://caowz.github.io/post/2099-01-todo-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caowz.github.io/post/2099-01-todo-list/</guid>
+      <description>这部分主要是记录已经解决的部分的技术上的问题，但是可能还没有比较完善，或者还没时间 整理成博客，后续会根据这个来完善相关的博客。 LaTeX hugo下解</description>
     </item>
     
   </channel>

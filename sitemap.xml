@@ -10,6 +10,27 @@
   </url>
   
   <url>
+    <loc>https://caowz.github.io/post/2019-10-1d-elastic-dg-theory-and-solution/</loc>
+    <lastmod>2019-10-16T09:54:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</loc>
+    <lastmod>2019-10-15T09:34:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/post/2019-10-asymptote-plot-basic/</loc>
+    <lastmod>2019-10-14T09:18:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://caowz.github.io/post/2019-09-screen-usage-and-settings/</loc>
     <lastmod>2019-09-30T23:20:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -35,6 +56,20 @@
     <lastmod>2019-02-25T14:30:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/tags/2019-10/</loc>
+    <lastmod>2019-10-16T09:54:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/tags/asymptote/</loc>
+    <lastmod>2019-10-14T09:18:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -79,29 +114,63 @@
   </url>
   
   <url>
-    <loc>https://caowz.github.io/post/</loc>
-    <lastmod>2019-09-30T23:20:12+08:00</lastmod>
+    <loc>https://caowz.github.io/tags/plot/</loc>
+    <lastmod>2019-10-14T09:18:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://caowz.github.io/categories/plot/</loc>
+    <lastmod>2019-10-14T09:18:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/post/</loc>
+    <lastmod>2019-10-16T09:54:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/tags/software/</loc>
+    <lastmod>2019-10-15T09:34:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/categories/software/</loc>
+    <lastmod>2019-10-15T09:34:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://caowz.github.io/post/2099-01-todo-list/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://caowz.github.io/tags/</loc>
-    <lastmod>2019-09-29T10:41:11+08:00</lastmod>
+    <lastmod>2019-10-16T09:54:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://caowz.github.io/tags/tools/</loc>
-    <lastmod>2019-09-30T23:20:12+08:00</lastmod>
+    <lastmod>2019-10-15T09:34:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://caowz.github.io/categories/tools/</loc>
-    <lastmod>2019-09-30T23:20:12+08:00</lastmod>
+    <lastmod>2019-10-15T09:34:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

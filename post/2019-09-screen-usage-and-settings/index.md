@@ -105,6 +105,9 @@ C-a d -> detach，暂时离开当前session，将目前的 screen session (可�
 C-a w -> 显示所有窗口列表
 
 C-a k -> kill window，强行关闭当前的 window
+
+# the version 4 has this option.
+C-a | -> Split the current region vertically into two new onws, 将窗口左右分屏
 ```
 
 ## **2.3** **Screen** 的配置
