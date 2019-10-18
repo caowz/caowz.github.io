@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on caowz blog for taking notes about my research and life</title>
+    <link>https://caowz.github.io/tags/software/</link>
+    <description>Recent content in Software on caowz blog for taking notes about my research and life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Oct 2019 09:34:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://caowz.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>地球物理开源软件：地震学</title>
+      <link>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</link>
+      <pubDate>Tue, 15 Oct 2019 09:34:43 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</guid>
+      <description>本文主要是介绍开源的地球物理相关的软件（地震学）及获取的方式 0. 网址汇总 这部分主要是将一些网址进行汇总，里面包含了很多相关的代码，如果在下面的</description>
+    </item>
+    
+  </channel>
+</rss>
