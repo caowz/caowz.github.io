@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>caowz blog for taking notes about my research and life</title>
+    <link>https://caowz.github.io/</link>
+    <description>Recent content on caowz blog for taking notes about my research and life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Cao Wenzhong</copyright>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    
+	<atom:link href="https://caowz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于</title>
+      <link>https://caowz.github.io/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/about/</guid>
+      <description>此博客的主要目的是用来对日常的科研等相关的内容进行记录,如果需要转载请表明 出处 a. 本博客主要会记录下列的相关内容: 1 - Linux日常使用及服务</description>
+    </item>
+    
+    <item>
+      <title>留言</title>
+      <link>https://caowz.github.io/comments/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/comments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>一维弹性波间断加辽金（DG）方法介绍</title>
+      <link>https://caowz.github.io/post/2019-10-1d-elastic-dg-theory-and-solution/</link>
+      <pubDate>Wed, 16 Oct 2019 09:54:29 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-1d-elastic-dg-theory-and-solution/</guid>
+      <description>在进行地震波传播过程的数值模拟时，主要使用有限差分或者有限元类的方法来求解弹性 波动方程，最近几年，间断加辽金的方法也越来越广泛的应用在地震波</description>
+    </item>
+    
+    <item>
+      <title>地球物理开源软件：地震学</title>
+      <link>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</link>
+      <pubDate>Tue, 15 Oct 2019 09:34:43 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-geophysical-software-for-seismology/</guid>
+      <description>本文主要是介绍开源的地球物理相关的软件（地震学）及获取的方式 0. 网址汇总 这部分主要是将一些网址进行汇总，里面包含了很多相关的代码，如果在下面的</description>
+    </item>
+    
+    <item>
+      <title>Asymptote绘图基础</title>
+      <link>https://caowz.github.io/post/2019-10-asymptote-plot-basic/</link>
+      <pubDate>Mon, 14 Oct 2019 09:18:23 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-asymptote-plot-basic/</guid>
+      <description>Asymptote是一个矢量图的绘图语言，主要是通过编程的方式来实现绘图，对于某些特定 情况下的绘图来说是非常好的一个选择。 Asymptote</description>
+    </item>
+    
+    <item>
+      <title>Screen的用法及设置</title>
+      <link>https://caowz.github.io/post/2019-09-screen-usage-and-settings/</link>
+      <pubDate>Mon, 30 Sep 2019 23:20:12 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-screen-usage-and-settings/</guid>
+      <description>Screen 是一款Linux下的全屏幕窗口管理软件。我在使用服务器（SSH 远 程连接）的过程中发现这类的软件可以提供很大的帮助，因此这里介绍一下如何使用</description>
+    </item>
+    
+    <item>
+      <title>使用Web Service Fetch脚本申请和获取地震数据及相关信息</title>
+      <link>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</link>
+      <pubDate>Sun, 29 Sep 2019 10:41:11 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-fetch-seismogram-by-scripts/</guid>
+      <description>最近想下载一些地震数据,但是发现IRIS网站中的 Wilber3网页一直无法打开,因此尝试 使用脚本获取数据的方法,把对应的用法在这里记录. 1. Web</description>
+    </item>
+    
+    <item>
+      <title>Linux下磁盘阵列的格式化及挂载</title>
+      <link>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</link>
+      <pubDate>Fri, 27 Sep 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-09-disk-array-format-and-mount/</guid>
+      <description>最近组内的服务器新增加了一个磁盘阵列，简单记录一下在安装的过程中可能会用到的 一些命令。 1. Linux 相关的命令 1.1 lsblk: Linux 下列出块设备的一个命令，默认的显示</description>
+    </item>
+    
+    <item>
+      <title>LaTeX数学符号</title>
+      <link>https://caowz.github.io/post/2019-02-latex-math-symbol/</link>
+      <pubDate>Mon, 25 Feb 2019 14:30:14 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-02-latex-math-symbol/</guid>
+      <description>本文主要是介绍 LaTeX 中相关的数学符号 1. LaTeX 数学符号 LaTeX 可以写出非常完美的数学公式，同时在很多博客等网站上也支持 LaTeX 的数学符号 的语法。因此，现在 LaTeX 的使用</description>
+    </item>
+    
+    <item>
+      <title>Hugo博客Even主题简单使用及技巧</title>
+      <link>https://caowz.github.io/post/2019-10-hugo-even-basic-grammar/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-10-hugo-even-basic-grammar/</guid>
+      <description>在写博客的过程中，经常发现自己会忘记一些语法，或者有些特殊的情况之前遇到过， 但是由于时间较长可能已经忘记了具体的解决办法，因此专门用这篇博文</description>
+    </item>
+    
+    <item>
+      <title>TODO 列表</title>
+      <link>https://caowz.github.io/post/2099-01-todo-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caowz.github.io/post/2099-01-todo-list/</guid>
+      <description>这部分主要是记录已经解决的部分的技术上的问题，但是可能还没有比较完善，或者还没时间 整理成博客，后续会根据这个来完善相关的博客。 LaTeX hugo下解</description>
+    </item>
+    
+    <item>
+      <title>TODO 列表</title>
+      <link>https://caowz.github.io/post/todo-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caowz.github.io/post/todo-list/</guid>
+      <description>这部分主要是记录已经解决的部分的技术上的问题，但是可能还没有比较完善，或者还没时间 整理成博客，后续会根据这个来完善相关的博客。 LaTeX hugo下解</description>
+    </item>
+    
+  </channel>
+</rss>

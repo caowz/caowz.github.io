@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on caowz blog for taking notes about my research and life</title>
+    <link>https://caowz.github.io/categories/</link>
+    <description>Recent content in Categories on caowz blog for taking notes about my research and life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Cao Wenzhong</copyright>
+    
+	<atom:link href="https://caowz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://caowz.github.io/categories/hugo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://caowz.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>https://caowz.github.io/categories/latex/</link>
+      <pubDate>Mon, 25 Feb 2019 14:30:14 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/categories/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://caowz.github.io/categories/linux/</link>
+      <pubDate>Mon, 30 Sep 2019 23:20:12 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plot</title>
+      <link>https://caowz.github.io/categories/plot/</link>
+      <pubDate>Mon, 14 Oct 2019 09:18:23 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/categories/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://caowz.github.io/categories/software/</link>
+      <pubDate>Tue, 15 Oct 2019 09:34:43 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/categories/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://caowz.github.io/categories/tools/</link>
+      <pubDate>Tue, 15 Oct 2019 09:34:43 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
