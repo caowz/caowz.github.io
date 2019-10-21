@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on caowz blog for taking notes about my research and life</title>
+    <link>https://caowz.github.io/categories/latex/</link>
+    <description>Recent content in LaTeX on caowz blog for taking notes about my research and life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Cao Wenzhong</copyright>
+    <lastBuildDate>Mon, 25 Feb 2019 14:30:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://caowz.github.io/categories/latex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LaTeX数学符号</title>
+      <link>https://caowz.github.io/post/2019-02-latex-math-symbol/</link>
+      <pubDate>Mon, 25 Feb 2019 14:30:14 +0800</pubDate>
+      
+      <guid>https://caowz.github.io/post/2019-02-latex-math-symbol/</guid>
+      <description>本文主要是介绍 LaTeX 中相关的数学符号 1. LaTeX 数学符号 LaTeX 可以写出非常完美的数学公式，同时在很多博客等网站上也支持 LaTeX 的数学符号 的语法。因此，现在 LaTeX 的使用</description>
+    </item>
+    
+  </channel>
+</rss>
