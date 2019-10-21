@@ -3,6 +3,7 @@
 
 <!--
 -->
+
 > 在进行地震波传播过程的数值模拟时，主要使用有限差分或者有限元类的方法来求解弹性
 波动方程，最近几年，间断加辽金的方法也越来越广泛的应用在地震波传播过程的数值模拟中，
 这里主要是介绍 1D 情况下该方法的理论，以方便来理解该方法。
@@ -13,15 +14,13 @@
 ## **1.1 微分表示（强形式）**
 关于一维弹性波一阶速度应力的具体推导，这里不进行介绍，其形式为：
 \begin{align}
-\partial_t v - \frac{1}{\rho}\partial_x \tau = 0 
-\label{equ:1d-elastic-der-1}
+\begin{split}
+\partial_t v - \frac{1}{\rho}\partial_x \tau = 0 \\\\ \partial_t \tau - \mu\partial_x v = 0 
+\end{split}
+\label{equ:1d-elastic-der}
 \end{align}
-\begin{align}
-\partial_t \tau - \mu\partial_x v = 0 
-\label{equ:1d-elastic-der-2}
-\end{align}
-公式 (\ref{equ:1d-elastic-der-1}) 和公式 (\ref{equ:1d-elastic-der-2}) 一起构成了
-一维弹性波一阶速度应力方程组，其也可以改写成矩阵表示：
+
+公式 (\ref{equ:1d-elastic-der}) 是一阶速度应力方程组，其可以改写成矩阵表示：
 \begin{align}
 \partial_t \mathbf{Q} + \mathbf{A}\partial_x \mathbf{Q} = \mathbf{f}
 \label{equ:1d-elastic-der-matrix}
@@ -77,13 +76,12 @@ $\mathbf{f} = \begin{bmatrix} 0 & 0 \end{bmatrix}^T$。这里的 $\mathbf{f}$ �
 最终，可以得到矩阵形式表示的积分形式的一阶速度应力方程：
 \begin{align}
 \mathbf{M}\partial_t\mathbf{Q} = \mathbf{AKQ} - \mathbf{Flux}
+\label{equ:1d-elastic-int-matrix}
 \end{align}
 
 </div>
 
-# **2. 间断加辽金正演模拟求解流程**
-
-## **2.1 特征值与特征向量及其物理含义**
+# **2. 通量的计算**
 根据公式 (\ref{equ:flux-def}) 的通量的定义可以看到，我们如果可以将 $\mathbf{A}$ 表示
 成一个对角矩阵与另一个矩阵的乘积后可以很容易的来计算对应的通量。通过特征值和特征向量
 可以来实现，下面介绍一下对应的变换关系。
@@ -146,6 +144,53 @@ c & -cZ \\\\ -\frac{c}{Z} & c
 \end{split}
 \end{align}
 
+由通量的定义（公式 \ref{equ:flux-def}），可以得到下面的表示形式：
+\begin{align}
+\begin{split}
+\int_{\partial D_k} \mathbf{A} & \mathbf{Q}\ell_j(\xi) 
+\mathbf{n}d\xi = \\\\ & - \mathbf{A}^- \mathbf{Q}_l^k 
+\int\_{\partial D_k}^l \ell_i(\xi)\ell_j(\xi)d\xi \\\\ & + 
+\mathbf{A}^+\mathbf{Q}_r^k 
+\int\_{\partial D_k}^r \ell_i(\xi)\ell_j(\xi)d\xi \\\\ & -
+\mathbf{A}^+\mathbf{Q}_r^{k-1}
+\int\_{\partial D_k}^r \ell_i(\xi)\ell_j(\xi)d\xi \\\\ & +
+\mathbf{A}^-\mathbf{Q}_l^{k+1}
+\int\_{\partial D_k}^l \ell_i(\xi)\ell_j(\xi)d\xi
+\end{split}
+\end{align}
 
+我们定义 $\mathbf{F}^{l,r}$：
+\begin{align}
+\begin{split}
+\mathbf{F}^l = & \int_{\partial D_k}^l\ell_i(\xi)\ell_j(\xi)d\xi \\\\ \mathbf{F}^r = & 
+\int\_{\partial D_k}^r\ell_i(\xi)\ell_j(\xi)d\xi
+\end{split}
+\end{align}
+
+根据拉格朗日多项式的定义 $\ell\_1(\xi) = \ell\_1(-1) = 1$ 和 $\ell_{N_p}(\xi)=\ell\_{N_p}(1) = 1.$ 可以得到：
+\begin{align}
+\mathbf{F}^l =
+\begin{pmatrix}
+1 & 0 & \cdots & 0 \\\\ 0 & 0 & \cdots & 0 \\\\ & & \ddots & \\\\ 0 & 0 & 0 & 0
+\end{pmatrix},
+\mathbf{F}^r =
+\begin{pmatrix}
+0 & 0 & \cdots & 0 \\\\ 0 & 0 & \cdots & 0 \\\\ & & \ddots & \\\\ 0 & 0 & 0 & 1
+\end{pmatrix}
+\end{align}
+
+则通量可以表示为：
+\begin{align}
+\mathbf{Flux} 
+= -\mathbf{A}^-_k\mathbf{Q}_l^k\mathbf{F}^l 
++ \mathbf{A}_k^+\mathbf{Q}_r^k\mathbf{F}^r
+- \mathbf{A}_k^+\mathbf{Q}_r^{k-1}\mathbf{F}^l
++ \mathbf{A}_k^-\mathbf{Q}_l^{k+1}\mathbf{F}^r
+\end{align}
+
+
+<!--
+# **3. 1D间断加辽金弹性波模拟伪代码**
+-->
 
 

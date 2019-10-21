@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2019-10-16T09:54:29&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-16T09:54:29&#43;08:00" />
-<meta itemprop="wordCount" content="1063">
+<meta itemprop="wordCount" content="1258">
 
 
 
@@ -130,7 +130,7 @@
       <div class="post-meta">
         <span class="post-time"> 2019-10-16 </span>
         
-          <span class="more-meta"> 约 1063 字 </span>
+          <span class="more-meta"> 约 1258 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         
       </div>
@@ -146,10 +146,7 @@
 <li><a href="#1-1-微分表示-强形式"><strong>1.1 微分表示（强形式）</strong></a></li>
 <li><a href="#1-2-积分表示-弱形式"><strong>1.2 积分表示（弱形式）</strong></a></li>
 </ul></li>
-<li><a href="#2-间断加辽金正演模拟求解流程"><strong>2. 间断加辽金正演模拟求解流程</strong></a>
-<ul>
-<li><a href="#2-1-特征值与特征向量及其物理含义"><strong>2.1 特征值与特征向量及其物理含义</strong></a></li>
-</ul></li>
+<li><a href="#2-通量的计算"><strong>2. 通量的计算</strong></a></li>
 </ul>
 </nav>
   </div>
@@ -173,15 +170,13 @@
 
 <p>关于一维弹性波一阶速度应力的具体推导，这里不进行介绍，其形式为：
 \begin{align}
-\partial_t v - \frac{1}{\rho}\partial_x \tau = 0
-\label{equ:1d-elastic-der-1}
-\end{align}
-\begin{align}
-\partial_t \tau - \mu\partial_x v = 0
-\label{equ:1d-elastic-der-2}
-\end{align}
-公式 (\ref{equ:1d-elastic-der-1}) 和公式 (\ref{equ:1d-elastic-der-2}) 一起构成了
-一维弹性波一阶速度应力方程组，其也可以改写成矩阵表示：
+\begin{split}
+\partial_t v - \frac{1}{\rho}\partial_x \tau = 0 \\ \partial_t \tau - \mu\partial_x v = 0
+\end{split}
+\label{equ:1d-elastic-der}
+\end{align}</p>
+
+<p>公式 (\ref{equ:1d-elastic-der}) 是一阶速度应力方程组，其可以改写成矩阵表示：
 \begin{align}
 \partial_t \mathbf{Q} + \mathbf{A}\partial_x \mathbf{Q} = \mathbf{f}
 \label{equ:1d-elastic-der-matrix}
@@ -238,13 +233,12 @@ $\mathbf{f} = \begin{bmatrix} 0 &amp; 0 \end{bmatrix}^T$。这里的 $\mathbf{f}
 最终，可以得到矩阵形式表示的积分形式的一阶速度应力方程：
 \begin{align}
 \mathbf{M}\partial_t\mathbf{Q} = \mathbf{AKQ} - \mathbf{Flux}
+\label{equ:1d-elastic-int-matrix}
 \end{align}
 
 </div>
 
-<h1 id="2-间断加辽金正演模拟求解流程"><strong>2. 间断加辽金正演模拟求解流程</strong></h1>
-
-<h2 id="2-1-特征值与特征向量及其物理含义"><strong>2.1 特征值与特征向量及其物理含义</strong></h2>
+<h1 id="2-通量的计算"><strong>2. 通量的计算</strong></h1>
 
 <p>根据公式 (\ref{equ:flux-def}) 的通量的定义可以看到，我们如果可以将 $\mathbf{A}$ 表示
 成一个对角矩阵与另一个矩阵的乘积后可以很容易的来计算对应的通量。通过特征值和特征向量
@@ -307,9 +301,74 @@ c &amp; -cZ \\ -\frac{c}{Z} &amp; c
 \end{pmatrix}
 \end{split}
 \end{align}</p>
+
+<p>由通量的定义（公式 \ref{equ:flux-def}），可以得到下面的表示形式：
+\begin{align}
+\begin{split}
+\int_{\partial D_k} \mathbf{A} &amp; \mathbf{Q}\ell_j(\xi)
+\mathbf{n}d\xi = \\ &amp; - \mathbf{A}^- \mathbf{Q}_l^k
+\int_{\partial D_k}^l \ell_i(\xi)\ell_j(\xi)d\xi \\ &amp; +
+\mathbf{A}^+\mathbf{Q}_r^k
+\int_{\partial D_k}^r \ell_i(\xi)\ell_j(\xi)d\xi \\ &amp; -
+\mathbf{A}^+\mathbf{Q}_r^{k-1}
+\int_{\partial D_k}^r \ell_i(\xi)\ell_j(\xi)d\xi \\ &amp; +
+\mathbf{A}^-\mathbf{Q}_l^{k+1}
+\int_{\partial D_k}^l \ell_i(\xi)\ell_j(\xi)d\xi
+\end{split}
+\end{align}</p>
+
+<p>我们定义 $\mathbf{F}^{l,r}$：
+\begin{align}
+\begin{split}
+\mathbf{F}^l = &amp; \int_{\partial D_k}^l\ell_i(\xi)\ell_j(\xi)d\xi \\ \mathbf{F}^r = &amp;
+\int_{\partial D_k}^r\ell_i(\xi)\ell_j(\xi)d\xi
+\end{split}
+\end{align}</p>
+
+<p>根据拉格朗日多项式的定义 $\ell_1(\xi) = \ell_1(-1) = 1$ 和 $\ell_{N_p}(\xi)=\ell_{N_p}(1) = 1.$ 可以得到：
+\begin{align}
+\mathbf{F}^l =
+\begin{pmatrix}
+1 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 \\ &amp; &amp; \ddots &amp; \\ 0 &amp; 0 &amp; 0 &amp; 0
+\end{pmatrix},
+\mathbf{F}^r =
+\begin{pmatrix}
+0 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 \\ &amp; &amp; \ddots &amp; \\ 0 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}
+\end{align}</p>
+
+<p>则通量可以表示为：
+\begin{align}
+\mathbf{Flux}
+= -\mathbf{A}^-_k\mathbf{Q}_l^k\mathbf{F}^l
++ \mathbf{A}_k^+\mathbf{Q}_r^k\mathbf{F}^r
+- \mathbf{A}_k^+\mathbf{Q}_r^{k-1}\mathbf{F}^l
++ \mathbf{A}_k^-\mathbf{Q}_l^{k+1}\mathbf{F}^r
+\end{align}</p>
+
+<!--
+# **3. 1D间断加辽金弹性波模拟伪代码**
+-->
     </div>
 
-    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">caowz</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-10-16
+        
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="https://caowz.github.io/post/2019-10-1d-elastic-dg-theory-and-solution/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  
+</div>
 <footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/2019-10/">2019-10</a>
@@ -358,7 +417,7 @@ c &amp; -cZ \\ -\frac{c}{Z} &amp; c
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">caowz</span>
+    <span class="author">Cao Wenzhong</span>
   </span>
 </div>
     </footer>
